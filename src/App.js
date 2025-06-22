@@ -31,7 +31,7 @@ function App() {
           </div>
           <div className="property-image">
             <img 
-              src="/images/28-web-or-mls-Radiate_6560CascadeSt-28.jpg" 
+              src="./images/28-web-or-mls-Radiate_6560CascadeSt-28.jpg" 
               alt="6560 Cascade St, San Diego" 
               className="header-property-image"
             />
