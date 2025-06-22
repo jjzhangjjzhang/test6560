@@ -1,158 +1,70 @@
-# Airbnb Guest Binder - React Version
+# Getting Started with Create React App
 
-A modern, responsive React application for Airbnb hosts to provide guests with essential information during their stay. Features a beautiful tabbed interface with sections for welcome notes, contact information, house rules, amenities, local recommendations, and departure instructions.
-
-## Features
-
-- 🏠 **Tabbed Interface**: Organized content in easy-to-navigate tabs
-- 📱 **Responsive Design**: Works perfectly on desktop, tablet, and mobile
-- 🎨 **Modern UI**: Beautiful gradient design with smooth animations
-- ⚡ **Fast Loading**: Optimized React components
-- 🌐 **GitHub Pages Ready**: Easy deployment to GitHub Pages
-
-## Quick Start
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/[your-username]/airbnb-guest-binder-react.git
-   cd airbnb-guest-binder-react
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm start
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
-
-### Customization
-
-1. **Update content**: Edit the component files in `src/components/` to customize the information
-2. **Add images**: Place your images in the `public/images/` folder
-3. **Modify styling**: Update `src/App.css` to change colors, fonts, or layout
-
-## Deployment to GitHub Pages
-
-### Option 1: Automatic Deployment (Recommended)
-
-1. **Install gh-pages**
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. **Update package.json homepage**
-   Replace `[your-github-username]` in the homepage field with your actual GitHub username
-
-3. **Deploy**
-   ```bash
-   npm run deploy
-   ```
-
-4. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Navigate to Settings → Pages
-   - Select "Deploy from a branch"
-   - Choose "gh-pages" branch
-   - Save
-
-### Option 2: Manual Deployment
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Upload to GitHub Pages**
-   - Create a new branch called `gh-pages`
-   - Upload the contents of the `build` folder
-   - Enable GitHub Pages in repository settings
-
-## Project Structure
-
-```
-airbnb-guest-binder-react/
-├── public/
-│   ├── images/          # Add your images here
-│   └── index.html
-├── src/
-│   ├── components/      # Tab components
-│   │   ├── Welcome.js
-│   │   ├── Contact.js
-│   │   ├── HouseRules.js
-│   │   ├── Amenities.js
-│   │   ├── LocalFavorites.js
-│   │   └── Departure.js
-│   ├── App.js          # Main app component
-│   ├── App.css         # Styles
-│   └── index.js
-├── package.json
-└── README.md
-```
-
-## Customization Guide
-
-### Adding Your Information
-
-1. **Contact Information** (`src/components/Contact.js`)
-   - Replace `[Your Name]` with your actual name
-   - Replace `[Your Phone Number]` with your phone number
-
-2. **House Rules** (`src/components/HouseRules.js`)
-   - Update check-in/check-out times
-   - Add your Wi-Fi credentials
-   - Customize rules as needed
-
-3. **Local Favorites** (`src/components/LocalFavorites.js`)
-   - Add your favorite restaurants, cafes, and attractions
-   - Include descriptions and recommendations
-
-4. **Amenities** (`src/components/Amenities.js`)
-   - Add instructions for appliances and systems
-   - Include troubleshooting tips
-
-### Styling Customization
-
-- **Colors**: Update the CSS variables in `src/App.css`
-- **Fonts**: Change the font-family properties
-- **Layout**: Modify the container widths and spacing
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-- `npm start` - Runs the app in development mode
-- `npm run build` - Builds the app for production
-- `npm test` - Launches the test runner
-- `npm run deploy` - Deploys to GitHub Pages
+In the project directory, you can run:
 
-## Browser Support
+### `npm start`
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Contributing
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+### `npm test`
 
-## License
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This project is open source and available under the [MIT License](LICENSE).
+### `npm run build`
 
-## Support
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-If you have any questions or need help with customization, please open an issue on GitHub.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-**Happy hosting! 🏠✨** # airbnb-guest-binder-react
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
