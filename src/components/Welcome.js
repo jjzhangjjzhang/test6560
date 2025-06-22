@@ -1,6 +1,34 @@
 import React from 'react';
 
 function Welcome() {
+  const images = [
+    {
+      src: '/images/page-cover_photo-16978.jpg',
+      alt: 'Beautiful San Diego property',
+      title: 'Your Home Away From Home'
+    },
+    {
+      src: '/images/crystal pier pacific beach sunset.jpg',
+      alt: 'Crystal Pier Pacific Beach Sunset',
+      title: 'Stunning Pacific Beach Views'
+    },
+    {
+      src: '/images/blue-horizons.jpg',
+      alt: 'Blue Horizons',
+      title: 'Blue Horizons'
+    },
+    {
+      src: '/images/San_Diego_Zoo_Entrance_.jpg',
+      alt: 'San Diego Zoo Entrance',
+      title: 'World-Famous San Diego Zoo'
+    },
+    {
+      src: '/images/Legoland-California-on-a-Budget-Park-Entrance.webp',
+      alt: 'Legoland California Park Entrance',
+      title: 'Legoland California'
+    }
+  ];
+
   return (
     <div className="section">
       <h2>Welcome to Your Home Away From Home</h2>
@@ -8,6 +36,19 @@ function Welcome() {
       <p>
         We're thrilled to have you stay with us! This guide will help you make the most of your time here and ensure you have everything you need for a comfortable and enjoyable stay.
       </p>
+      
+      {/* Hero Image */}
+      <div className="hero-image-container">
+        <img 
+          src="/images/page-cover_photo-16978.jpg" 
+          alt="Beautiful San Diego property" 
+          className="hero-image"
+        />
+        <div className="hero-overlay">
+          <h3>Welcome to San Diego!</h3>
+          <p>Your perfect vacation destination awaits</p>
+        </div>
+      </div>
       
       <div style={{ 
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
@@ -21,6 +62,25 @@ function Welcome() {
         <p style={{ margin: 0, opacity: 0.9 }}>
           Check out the navigation menu to find everything you need - from contact information to local recommendations!
         </p>
+      </div>
+      
+      {/* Image Gallery */}
+      <h3>Discover San Diego</h3>
+      <p>Explore the amazing attractions and beautiful scenery that make San Diego a world-class destination:</p>
+      
+      <div className="image-gallery">
+        {images.slice(1).map((image, index) => (
+          <div key={index} className="gallery-item">
+            <img 
+              src={image.src} 
+              alt={image.alt} 
+              className="gallery-image"
+            />
+            <div className="image-caption">
+              <h4>{image.title}</h4>
+            </div>
+          </div>
+        ))}
       </div>
       
       <h3>What's Included</h3>
