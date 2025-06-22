@@ -11,41 +11,50 @@ function App() {
   const [activeTab, setActiveTab] = useState('welcome');
 
   const tabs = [
-    { id: 'welcome', label: 'Welcome', component: Welcome },
-    { id: 'contact', label: 'Contact', component: Contact },
-    { id: 'house-rules', label: 'House Rules', component: HouseRules },
-    { id: 'amenities', label: 'Amenities', component: Amenities },
-    { id: 'local-favorites', label: 'Local Favorites', component: LocalFavorites },
-    { id: 'departure', label: 'Departure', component: Departure }
+    { id: 'welcome', label: 'Welcome', icon: '🏠', component: Welcome },
+    { id: 'contact', label: 'Contact', icon: '📞', component: Contact },
+    { id: 'house-rules', label: 'House Rules', icon: '📋', component: HouseRules },
+    { id: 'amenities', label: 'Amenities', icon: '🔧', component: Amenities },
+    { id: 'local-favorites', label: 'Local Guide', icon: '🗺️', component: LocalFavorites },
+    { id: 'departure', label: 'Departure', icon: '👋', component: Departure }
   ];
 
   const ActiveComponent = tabs.find(tab => tab.id === activeTab)?.component;
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome, Guest!</h1>
-        <p>We're so happy to have you. Here's a little guide to help you get settled.</p>
-      </header>
-      
-      <div className="container">
-        <div className="tab-container">
-          <div className="tab-nav">
-            {tabs.map(tab => (
-              <button
-                key={tab.id}
-                className={`tab-button ${activeTab === tab.id ? 'active' : ''}`}
-                onClick={() => setActiveTab(tab.id)}
-              >
-                {tab.label}
-              </button>
-            ))}
+      <div className="header">
+        <div className="header-content">
+          <div className="property-info">
+            <h1>Welcome to Your Home Away From Home</h1>
+            <p className="subtitle">We're excited to have you stay with us!</p>
+          </div>
+          <div className="property-image">
+            <div className="image-placeholder">
+              <span>🏠</span>
+              <p>Add your property photo here</p>
+            </div>
           </div>
         </div>
+      </div>
+      
+      <div className="main-container">
+        <nav className="navigation">
+          {tabs.map(tab => (
+            <button
+              key={tab.id}
+              className={`nav-button ${activeTab === tab.id ? 'active' : ''}`}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              <span className="nav-icon">{tab.icon}</span>
+              <span className="nav-label">{tab.label}</span>
+            </button>
+          ))}
+        </nav>
 
-        <div className="tab-content">
+        <main className="content">
           <ActiveComponent />
-        </div>
+        </main>
       </div>
     </div>
   );
