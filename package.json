@@ -1,7 +1,7 @@
 {
   "name": "airbnb-guest-binder-react",
   "version": "0.1.0",
-  "homepage": "https://[your-github-username].github.io/airbnb-guest-binder-react",
+  "homepage": "https://jjzhangjjzhang.github.io/airbnb-guest-binder-react",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
