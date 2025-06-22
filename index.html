@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Airbnb!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, Guest!</h1>
+        <p>We're so happy to have you. Here's a little guide to help you get settled.</p>
+    </header>
+    
+    <div class="container">
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+            <div class="tab-nav">
+                <button class="tab-button active" onclick="openTab(event, 'welcome')">Welcome</button>
+                <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
+                <button class="tab-button" onclick="openTab(event, 'house-rules')">House Rules</button>
+                <button class="tab-button" onclick="openTab(event, 'amenities')">Amenities</button>
+                <button class="tab-button" onclick="openTab(event, 'local-favorites')">Local Favorites</button>
+                <button class="tab-button" onclick="openTab(event, 'departure')">Departure</button>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="welcome" class="tab-content active">
+            <h2>A Little Welcome Note</h2>
+            <p>Welcome to [Your City/Town]! We hope you have a wonderful stay. Please make yourself at home and don't hesitate to reach out if you need anything.</p>
+            <img src="images/welcome-image.jpg" alt="A welcoming picture of the property or local area" class="placeholder-image">
+            <p class="caption">Feel free to replace `welcome-image.jpg` in the `images` folder with your own photo!</p>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Important Contacts</h2>
+            <ul>
+                <li><strong>Your Name:</strong> [Your Name]</li>
+                <li><strong>Phone Number:</strong> [Your Phone Number]</li>
+                <li><strong>Emergency Services:</strong> 911</li>
+            </ul>
+        </div>
+
+        <div id="house-rules" class="tab-content">
+            <h2>House Rules</h2>
+            <ul>
+                <li><strong>Check-in:</strong> After [Your Check-in Time]</li>
+                <li><strong>Check-out:</strong> Before [Your Check-out Time]</li>
+                <li><strong>Wi-Fi:</strong> Network: [Network Name], Password: [Password]</li>
+                <li>No smoking indoors.</li>
+                <li>Please keep noise to a minimum after 10 PM.</li>
+                <li>(Add any other important rules here)</li>
+            </ul>
+        </div>
+
+        <div id="amenities" class="tab-content">
+            <h2>How to Use...</h2>
+            <p>Instructions for the TV, coffee maker, thermostat, etc. You can add more details for each amenity.</p>
+        </div>
+
+        <div id="local-favorites" class="tab-content">
+            <h2>Our Local Favorites</h2>
+            <h3>Restaurants</h3>
+            <ul>
+                <li>[Restaurant Name]: Great for [Cuisine Type]. [Short description].</li>
+            </ul>
+            <h3>Cafes</h3>
+            <ul>
+                <li>[Cafe Name]: Best coffee in town.</li>
+            </ul>
+            <h3>Attractions</h3>
+            <ul>
+                <li>[Attraction Name]: A must-see! [Short description].</li>
+            </ul>
+        </div>
+
+        <div id="departure" class="tab-content">
+            <h2>Before You Leave</h2>
+            <p>Thank you for staying with us! Before you check out, please:</p>
+            <ul>
+                <li>Take out the trash.</li>
+                <li>Place used towels in the laundry basket.</li>
+                <li>Log out of any streaming services.</li>
+                <li>Lock the door behind you.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabcontent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove "active" class from all tab buttons
+            var tablinks = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the selected tab content and add "active" class to the button
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

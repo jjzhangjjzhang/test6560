@@ -1,0 +1,189 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.App-header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.App-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Tab Navigation */
+.tab-container {
+  margin-bottom: 2rem;
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #6c757d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.tab-button:hover {
+  background: #e9ecef;
+  border-color: #dee2e6;
+  color: #495057;
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Tab Content */
+.tab-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+}
+
+.tab-section {
+  text-align: left;
+}
+
+.tab-section h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.tab-section h3 {
+  color: #495057;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.tab-section p {
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tab-section ul {
+  color: #6c757d;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.tab-section li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.tab-section strong {
+  color: #495057;
+  font-weight: 600;
+}
+
+.placeholder-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.caption {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  color: #868e96;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .App-header p {
+    font-size: 1rem;
+  }
+  
+  .tab-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .tab-content {
+    padding: 1.5rem;
+  }
+  
+  .tab-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tab-section p,
+  .tab-section li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .App-header {
+    padding: 1.5rem 0;
+  }
+  
+  .tab-content {
+    padding: 1rem;
+  }
+} 
