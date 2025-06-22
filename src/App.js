@@ -30,10 +30,11 @@ function App() {
             <p className="subtitle">We're excited to have you stay with us!</p>
           </div>
           <div className="property-image">
-            <div className="image-placeholder">
-              <span>🏠</span>
-              <p>Add your property photo here</p>
-            </div>
+            <img 
+              src="/images/28-web-or-mls-Radiate_6560CascadeSt-28.jpg" 
+              alt="6560 Cascade St, San Diego" 
+              className="header-property-image"
+            />
           </div>
         </div>
       </div>

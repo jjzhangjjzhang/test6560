@@ -12,30 +12,22 @@ function Contact() {
       <div className="contact-grid">
         <div className="contact-card">
           <h4>👤 Host Contact</h4>
-          <p><strong>Name:</strong> [Your Name]</p>
-          <p><strong>Phone:</strong> [Your Phone Number]</p>
-          <p><strong>Email:</strong> [Your Email]</p>
+          <p><strong>Name:</strong> Jingjing Zhang</p>
+          <p><strong>Phone:</strong> 858-252-5617</p>
         </div>
         
         <div className="contact-card">
           <h4>🏠 Property Details</h4>
-          <p><strong>Address:</strong> [Your Property Address]</p>
-          <p><strong>Check-in:</strong> [Your Check-in Time]</p>
-          <p><strong>Check-out:</strong> [Your Check-out Time]</p>
+          <p><strong>Address:</strong> 6560 Cascade St, San Diego, CA 92122</p>
+          <p><strong>Check-in:</strong> After 4:00 PM</p>
+          <p><strong>Check-out:</strong> By 12:00 PM</p>
         </div>
         
         <div className="contact-card">
           <h4>🚨 Emergency Contacts</h4>
           <p><strong>Emergency Services:</strong> 911</p>
-          <p><strong>Local Police:</strong> [Local Police Number]</p>
-          <p><strong>Nearest Hospital:</strong> [Hospital Name & Number]</p>
-        </div>
-        
-        <div className="contact-card">
-          <h4>🔧 Maintenance</h4>
-          <p><strong>Property Manager:</strong> [Manager Name]</p>
-          <p><strong>Maintenance:</strong> [Maintenance Contact]</p>
-          <p><strong>Cleaning Service:</strong> [Cleaning Contact]</p>
+          <p><strong>Local Police:</strong> San Diego Police Department</p>
+          <p><strong>Nearest Hospital:</strong> <a href="https://maps.app.goo.gl/hrhuU3Vqqi3nRkE9A" target="_blank" rel="noopener noreferrer">Scripps Memorial Hospital La Jolla</a></p>
         </div>
       </div>
       

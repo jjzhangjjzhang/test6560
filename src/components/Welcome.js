@@ -14,8 +14,8 @@ function Welcome() {
     },
     {
       src: '/images/blue-horizons.jpg',
-      alt: 'Blue Horizons',
-      title: 'Blue Horizons'
+      alt: 'Seaworld San Diego',
+      title: 'Seaworld San Diego'
     },
     {
       src: '/images/San_Diego_Zoo_Entrance_.jpg',
@@ -40,13 +40,13 @@ function Welcome() {
       {/* Hero Image */}
       <div className="hero-image-container">
         <img 
-          src="/images/page-cover_photo-16978.jpg" 
-          alt="Beautiful San Diego property" 
+          src="/images/67-print-Radiate_6560CascadeSt-67.jpg" 
+          alt="6560 Cascade St, San Diego - Your Home Away From Home" 
           className="hero-image"
         />
         <div className="hero-overlay">
-          <h3>Welcome to San Diego!</h3>
-          <p>Your perfect vacation destination awaits</p>
+          <h3>Welcome to 6560 Cascade St!</h3>
+          <p>Your perfect San Diego vacation home awaits</p>
         </div>
       </div>
       

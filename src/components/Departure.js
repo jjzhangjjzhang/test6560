@@ -6,7 +6,7 @@ function Departure() {
       <h2>Departure Checklist</h2>
       
       <p>
-        Thank you for choosing to stay with us! To ensure a smooth check-out process and help us prepare for our next guests, please follow this departure checklist.
+        Thank you for choosing to stay with us! We hope you're having a 5-star stay. To ensure a smooth check-out process and help us prepare for our next guests, please follow this departure checklist.
       </p>
       
       <div style={{ 
@@ -17,69 +17,64 @@ function Departure() {
         margin: '2rem 0',
         textAlign: 'center'
       }}>
-        <h3 style={{ color: 'white', marginBottom: '1rem' }}>Check-out Time: [Your Check-out Time]</h3>
+        <h3 style={{ color: 'white', marginBottom: '1rem' }}>Check-out Time: 12:00 PM</h3>
         <p style={{ margin: 0, opacity: 0.9 }}>
-          Please ensure you've completed all items on the checklist below before leaving.
+          There isn't too much you need to do, just a few small actions that will really help us turn the house around for the next guest.
         </p>
       </div>
       
       <div className="rules-grid">
         <div className="rule-item">
-          <h4>🧹 Cleanliness</h4>
+          <h4>📦 Personal Items</h4>
           <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Take out all trash and recycling</li>
-            <li>Place used towels in the laundry basket</li>
+            <li>Double-check for any personal items before you head out</li>
+            <li>Check all rooms, closets, and under beds</li>
+          </ul>
+        </div>
+        
+        <div className="rule-item">
+          <h4>🗑️ Trash & Cleanup</h4>
+          <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
+            <li>Collect all the trash and put it in the trash cans in the backyard with trash bags</li>
+            <li>Wash all the dishes</li>
             <li>Clean up any spills or messes</li>
-            <li>Wash any dishes you used</li>
+            <li>Place used towels in the laundry basket</li>
           </ul>
         </div>
         
         <div className="rule-item">
-          <h4>🔌 Electronics & Appliances</h4>
+          <h4>🔌 Electronics & Lights</h4>
           <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Log out of all streaming services (Netflix, Hulu, etc.)</li>
-            <li>Turn off all lights and ceiling fans</li>
-            <li>Set thermostat back to 72°F (22°C)</li>
+            <li>Turn off all the lights and electronics</li>
+            <li>Log out of any streaming services on the smart TV</li>
             <li>Unplug any personal electronics</li>
+            <li>Set thermostat to a reasonable temperature</li>
           </ul>
         </div>
         
         <div className="rule-item">
-          <h4>🔑 Keys & Access</h4>
+          <h4>🚪 Doors & Security</h4>
           <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Return all keys to the designated location</li>
-            <li>Lock all doors and windows</li>
-            <li>Return garage remote to kitchen counter</li>
-            <li>Ensure security system is armed (if applicable)</li>
+            <li>Lock the front door by pressing the right bottom key (with ✔️) in the keypad</li>
           </ul>
         </div>
         
         <div className="rule-item">
-          <h4>📱 Personal Items</h4>
+          <h4>🎮 Game Room & Backyard</h4>
           <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Check all rooms for personal belongings</li>
-            <li>Empty refrigerator of any food you brought</li>
-            <li>Collect any items from bathroom</li>
-            <li>Check under beds and in closets</li>
+            <li>Return any game equipment to its proper place</li>
+            <li>Put away drawing supplies and toys</li>
+            <li>Return putter to the game room if used</li>
+            <li>Clean up any outdoor activities</li>
           </ul>
         </div>
         
         <div className="rule-item">
-          <h4>🚗 Transportation</h4>
+          <h4>🚗 Final Steps</h4>
           <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Move your car from the driveway/garage</li>
-            <li>Return any borrowed items (umbrellas, etc.)</li>
-            <li>Ensure parking spot is clear for next guests</li>
-          </ul>
-        </div>
-        
-        <div className="rule-item">
-          <h4>📞 Final Steps</h4>
-          <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
-            <li>Send us a quick message when you leave</li>
-            <li>Leave any feedback in the guest book</li>
-            <li>Rate your stay on the booking platform</li>
-            <li>Consider leaving a review for future guests</li>
+            <li>Move your car from the driveway</li>
+            <li>Take one final walk-through of the property</li>
+            <li>Have a safe trip home!</li>
           </ul>
         </div>
       </div>
@@ -93,7 +88,7 @@ function Departure() {
       }}>
         <h4 style={{ color: '#22543d', marginBottom: '0.5rem' }}>💝 Thank You!</h4>
         <p style={{ margin: 0, color: '#2f855a' }}>
-          We hope you had a wonderful stay! It was a pleasure hosting you, and we'd love to welcome you back anytime. Safe travels!
+          Thank you in advance and welcome back anytime. We hope you had a wonderful stay and would love to host you again in the future!
         </p>
       </div>
       
