@@ -4,6 +4,11 @@ on:
   push:
     branches: [ test6560 ]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
