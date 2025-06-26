@@ -50,7 +50,7 @@ function LocalFavorites() {
               <li>
                 <strong>San Diego Zoo</strong> – World-famous zoo with thousands of animals.<br/>
                 <em>📍 2920 Zoo Dr, San Diego, CA 92101 | 📞 (619) 231-1515</em> <a href="https://www.google.com/maps/search/?api=1&query=2920+Zoo+Dr,+San+Diego,+CA+92101" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
-                <strong>Parking:</strong> Park for free in Balboa Park and walk to the zoo.<br/>
+                <strong>Parking:</strong> Zoo has paid parking, and you can also park for free in Balboa Park.<br/>
                 <img src="/images/zoo.jpg" alt="San Diego Zoo" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
               </li>
               <li>

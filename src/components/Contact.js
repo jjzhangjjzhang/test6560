@@ -27,6 +27,7 @@ function Contact() {
           <h4>🚨 Emergency Contacts</h4>
           <p><strong>Emergency Services:</strong> 911</p>
           <p><strong>Local Police:</strong> San Diego Police Department</p>
+          <p><strong>SDPD Non-Emergency:</strong> <a href="tel:6195312000">(619) 531-2000</a> &nbsp;|&nbsp; <a href="https://www.sandiego.gov/police" target="_blank" rel="noopener noreferrer">Website</a></p>
           <p><strong>Nearest Hospital:</strong> <a href="https://maps.app.goo.gl/hrhuU3Vqqi3nRkE9A" target="_blank" rel="noopener noreferrer">Scripps Memorial Hospital La Jolla</a></p>
         </div>
       </div>
