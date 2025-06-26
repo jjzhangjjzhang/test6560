@@ -1,4 +1,5 @@
 import React from 'react';
+import WeatherWidget from './WeatherWidget';
 
 function Welcome() {
   const images = [
@@ -49,6 +50,9 @@ function Welcome() {
           <p>Your perfect San Diego vacation home awaits</p>
         </div>
       </div>
+      
+      {/* Weather Widget */}
+      <WeatherWidget />
       
       <div style={{ 
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 

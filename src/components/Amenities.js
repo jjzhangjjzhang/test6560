@@ -9,7 +9,8 @@ function Amenities() {
     { id: 'climate', label: 'Climate & Power', icon: '🌡️' },
     { id: 'bathroom', label: 'Bathroom & Laundry', icon: '🚿' },
     { id: 'access', label: 'Access & Security', icon: '🔑' },
-    { id: 'games', label: 'Games & Activities', icon: '🎮' }
+    { id: 'games', label: 'Games & Activities', icon: '🎮' },
+    { id: 'family', label: 'Family & Beach Gear', icon: '👶' }
   ];
 
   const renderCategoryContent = () => {
@@ -110,6 +111,17 @@ function Amenities() {
               <p><strong>Cornhole:</strong> Available in the backyard</p>
             </div>
           </>
+        );
+      
+      case 'family':
+        return (
+          <div className="amenity-card">
+            <h4><span className="amenity-icon">👶</span> Family & Beach Gear</h4>
+            <p><strong>Baby High Chair:</strong> Available for use</p>
+            <p><strong>Pack n Play:</strong> Available for use</p>
+            <p><strong>Beach Toys:</strong> Available for use</p>
+            <p><strong>Beach Towels:</strong> Provided for your convenience</p>
+          </div>
         );
       
       default:
