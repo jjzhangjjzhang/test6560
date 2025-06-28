@@ -1,15 +1,6 @@
 import React from 'react';
 
 function LocalFavorites({ activeSubTab = 'attractions' }) {
-  const tabs = [
-    { id: 'attractions', label: 'Attractions', icon: '🎭' },
-    { id: 'hiking', label: 'Hiking Trails', icon: '🥾' },
-    { id: 'dining', label: 'Dining', icon: '🍽️' },
-    { id: 'cafes', label: 'Cafes', icon: '☕' },
-    { id: 'shopping', label: 'Shopping', icon: '🛍️' },
-    { id: 'transport', label: 'Transportation', icon: '🚗' },
-  ];
-
   return (
     <div className="section">
       <h2>Local Guide & Recommendations</h2>
