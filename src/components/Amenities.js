@@ -174,19 +174,6 @@ function Amenities() {
       <div className="category-content">
         {renderCategoryContent()}
       </div>
-      
-      <div style={{ 
-        background: '#e6fffa', 
-        border: '1px solid #81e6d9', 
-        padding: '1.5rem', 
-        borderRadius: '12px', 
-        marginTop: '2rem'
-      }}>
-        <h4 style={{ color: '#234e52', marginBottom: '0.5rem' }}>🔧 Troubleshooting</h4>
-        <p style={{ margin: 0, color: '#285e61' }}>
-          If something isn't working properly, please check the troubleshooting guide in the welcome packet or contact us immediately. We're here to help!
-        </p>
-      </div>
     </div>
   );
 }

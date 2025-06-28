@@ -200,6 +200,22 @@ body {
   font-weight: 600;
 }
 
+/* Local Guide Images */
+.local-guide-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.local-guide-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Hero Image */
 .hero-image-container {
   position: relative;

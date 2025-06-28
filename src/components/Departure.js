@@ -37,7 +37,6 @@ function Departure() {
           <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
             <li>Collect all the trash and put it in the trash cans in the backyard with trash bags</li>
             <li>Wash all the dishes</li>
-            <li>Clean up any spills or messes</li>
             <li>Place used towels in the laundry basket</li>
           </ul>
         </div>
@@ -48,7 +47,6 @@ function Departure() {
             <li>Turn off all the lights and electronics</li>
             <li>Log out of any streaming services on the smart TV</li>
             <li>Unplug any personal electronics</li>
-            <li>Set thermostat to a reasonable temperature</li>
           </ul>
         </div>
         

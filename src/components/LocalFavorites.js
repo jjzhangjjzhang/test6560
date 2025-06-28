@@ -62,7 +62,7 @@ function LocalFavorites() {
               <li>
                 <strong>SeaWorld San Diego</strong> – Marine park with shows, rides, and animal encounters.<br/>
                 <em>📍 500 SeaWorld Dr, San Diego, CA 92109 | 📞 (619) 222-4732</em> <a href="https://www.google.com/maps/search/?api=1&query=500+SeaWorld+Dr,+San+Diego,+CA+92109" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
-                <strong>Parking:</strong> Onsite parking is expensive. Free street parking is available around Dana Landing (<a href="https://maps.app.goo.gl/Hd1JQ7PM4pro2PYm7" target="_blank" rel="noopener noreferrer">map</a>), about a 15-minute walk.<br/>
+                <strong>Parking:</strong> Parking fee is $35. Free street parking is available around Dana Landing (<a href="https://maps.app.goo.gl/Hd1JQ7PM4pro2PYm7" target="_blank" rel="noopener noreferrer">map</a>), about a 15-minute walk.<br/>
                 <img src="/images/seaworld.jpg" alt="SeaWorld San Diego" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
               </li>
               <li>
@@ -101,6 +101,13 @@ function LocalFavorites() {
                 <strong>Parking:</strong> Free parking available.<br/>
                 <img src="/images/belmont_park.jpg" alt="Belmont Park" className="local-guide-image" />
               </li>
+              <li>
+                <strong>Sesame Street in Chula Vista</strong> – Family-friendly theme park featuring Sesame Street characters, rides, and shows.<br/>
+                <em>📍 2052 Entertainment Cir, Chula Vista, CA 91911 | 📞 (619) 425-7900</em> <a href="https://www.google.com/maps/search/?api=1&query=2052+Entertainment+Cir,+Chula+Vista,+CA+91911" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
+                <strong>Parking:</strong> Parking fee required.<br/>
+                <img src="/images/sesame_street.jpg" alt="Sesame Street in Chula Vista" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
+                <a href="https://sesameplace.com/san-diego/" target="_blank" rel="noopener noreferrer">Website</a>
+              </li>
             </ul>
           </div>
         )}
@@ -112,7 +119,6 @@ function LocalFavorites() {
                 <strong>Torrey Pines State Natural Reserve</strong> – Scenic coastal trails with stunning ocean views, wildflowers, and unique sandstone formations.<br/>
                 <em>📍 12600 N Torrey Pines Rd, La Jolla, CA 92037</em> <a href="https://www.google.com/maps/search/?api=1&query=12600+N+Torrey+Pines+Rd,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Easy to moderate trails, family-friendly. Parking: Free, but limited.<br/>
-                <img src="/images/torrey_pines_trail.jpg" alt="Torrey Pines State Natural Reserve Trail" className="local-guide-image" />
                 <img src="/images/torrey_pines.jpg" alt="Torrey Pines State Natural Reserve" className="local-guide-image" />
               </li>
               <li>
@@ -171,18 +177,6 @@ function LocalFavorites() {
                 <a href="https://thecottagerestaurants.com/" target="_blank" rel="noopener noreferrer">Website</a>
               </li>
               <li>
-                <strong>George's at the Cove</strong> – Upscale Californian cuisine and seafood with stunning ocean views.<br/>
-                <em>📍 1250 Prospect St, La Jolla, CA 92037 | 📞 (858) 454-4244</em> <a href="https://www.google.com/maps/search/?api=1&query=1250+Prospect+St,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
-                Try the lobster roll, rockfish tacos, or seared yellowtail. Rooftop terrace is a must for sunset.<br/>
-                <a href="https://www.georgesatthecove.com/" target="_blank" rel="noopener noreferrer">Website</a>
-              </li>
-              <li>
-                <strong>Nine-Ten Restaurant & Bar</strong> – Contemporary American, Michelin-recognized fine dining.<br/>
-                <em>📍 910 Prospect St, La Jolla, CA 92037 | 📞 (858) 964-5400</em> <a href="https://www.google.com/maps/search/?api=1&query=910+Prospect+St,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
-                Creative seasonal cuisine. Signature dishes include Jamaican jerk pork belly and cacio e pepe.<br/>
-                <a href="https://www.nine-ten.com/" target="_blank" rel="noopener noreferrer">Website</a>
-              </li>
-              <li>
                 <strong>Wayfarer Bread & Pastry</strong> – Artisan bakery with amazing pastries, croissants, and sandwiches.<br/>
                 <em>📍 5525 La Jolla Blvd, La Jolla, CA 92037 | 📞 (858) 454-1924</em> <a href="https://www.google.com/maps/search/?api=1&query=5525+La+Jolla+Blvd,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Perfect for breakfast or a light lunch.<br/>
@@ -205,6 +199,18 @@ function LocalFavorites() {
                 <em>📍 7748 Regents Rd, San Diego, CA 92122 | 📞 (858) 587-2222</em> <a href="https://www.google.com/maps/search/?api=1&query=7748+Regents+Rd,+San+Diego,+CA+92122" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Great for casual dining, group meals, or a quick bite. Gluten-free and vegetarian options available.<br/>
                 <a href="https://leucadiapizza.com/utc/" target="_blank" rel="noopener noreferrer">Website</a>
+              </li>
+              <li>
+                <strong>Oscar's Mexican Seafood</strong> – Popular local chain known for fresh fish tacos, ceviche, and Mexican seafood dishes.<br/>
+                <em>📍 703 Turquoise St, San Diego, CA 92109 | 📞 (858) 488-6392</em> <a href="https://www.google.com/maps/search/?api=1&query=703+Turquoise+St,+San+Diego,+CA+92109" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
+                Famous for their fish tacos, shrimp tacos, and fresh ceviche. Casual, counter-service style.<br/>
+                <a href="https://oscarsmexicanseafood.com/" target="_blank" rel="noopener noreferrer">Website</a>
+              </li>
+              <li>
+                <strong>Aqua Mare Cucina Italiana & Cocktails</strong> – Upscale Italian restaurant with fresh pasta, seafood, and craft cocktails.<br/>
+                <em>📍 1298 Prospect St, La Jolla, CA 92037 | 📞 (858) 459-0311</em> <a href="https://www.google.com/maps/search/?api=1&query=1298+Prospect+St,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
+                Elegant dining with ocean views. Known for their handmade pasta, fresh seafood, and extensive wine list.<br/>
+                <a href="https://aquamare.com/" target="_blank" rel="noopener noreferrer">Website</a>
               </li>
               <li>
                 <strong>Convoy Street (Kearny Mesa)</strong> – Asian food district with dozens of top-rated restaurants.<br/>
@@ -232,6 +238,12 @@ function LocalFavorites() {
                 <strong>Starbucks (Governor Dr)</strong> – Classic coffee shop, quick and convenient.<br/>
                 <em>📍 3202 Governor Dr, San Diego, CA 92122</em> <a href="https://www.google.com/maps/search/?api=1&query=3202+Governor+Dr,+San+Diego,+CA+92122" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <a href="https://www.starbucks.com/store-locator/store/10113/" target="_blank" rel="noopener noreferrer">Website</a>
+              </li>
+              <li>
+                <strong>Better Buzz Coffee Hillcrest</strong> – Popular local coffee chain with great drinks and atmosphere. A bit far from the house, but perfect to visit when going to Balboa Park.<br/>
+                <em>📍 801 University Ave, San Diego, CA 92103 | 📞 (619) 269-4200</em> <a href="https://www.google.com/maps/search/?api=1&query=801+University+Ave,+San+Diego,+CA+92103" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
+                Known for their "Best Drink Ever" and other creative coffee beverages. Great spot to fuel up before or after exploring Balboa Park.<br/>
+                <a href="https://betterbuzzcoffee.com/" target="_blank" rel="noopener noreferrer">Website</a>
               </li>
             </ul>
           </div>
@@ -275,22 +287,6 @@ function LocalFavorites() {
             </ul>
           </div>
         )}
-      </div>
-      
-      <div style={{ 
-        background: '#fef5e7', 
-        border: '1px solid #fed7aa', 
-        padding: '1.5rem', 
-        borderRadius: '12px', 
-        marginTop: '2rem'
-      }}>
-        <h4 style={{ color: '#c05621', marginBottom: '0.5rem' }}>💡 Local Insider Tips</h4>
-        <ul style={{ margin: 0, color: '#744210', paddingLeft: '1.5rem' }}>
-          <li>Best time to visit [popular spot]: [time/day]</li>
-          <li>Don't miss the [local event/festival] happening [when]</li>
-          <li>For the best photos, visit [location] during [time]</li>
-          <li>Local secret: [hidden gem or insider tip]</li>
-        </ul>
       </div>
     </div>
   );
