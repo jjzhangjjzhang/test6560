@@ -19,61 +19,61 @@ function LocalFavorites({ activeSubTab = 'attractions' }) {
                 <strong>San Diego Zoo</strong> – World-famous zoo with thousands of animals.<br/>
                 <em>📍 2920 Zoo Dr, San Diego, CA 92101 | 📞 (619) 231-1515</em> <a href="https://www.google.com/maps/search/?api=1&query=2920+Zoo+Dr,+San+Diego,+CA+92101" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Zoo has paid parking, and you can also park for free in Balboa Park.<br/>
-                <img src="/images/zoo.jpg" alt="San Diego Zoo" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
+                <img src={process.env.PUBLIC_URL + "/images/zoo.jpg"} alt="San Diego Zoo" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
               </li>
               <li>
                 <strong>Balboa Park</strong> – Beautiful urban park with gardens, museums, and walking paths.<br/>
                 <em>📍 1549 El Prado, San Diego, CA 92101</em> <a href="https://www.google.com/maps/search/?api=1&query=1549+El+Prado,+San+Diego,+CA+92101" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Free parking available throughout Balboa Park.<br/>
-                <img src="/images/balboa_park.jpg" alt="Balboa Park" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/balboa_park.jpg"} alt="Balboa Park" className="local-guide-image" />
               </li>
               <li>
                 <strong>SeaWorld San Diego</strong> – Marine park with shows, rides, and animal encounters.<br/>
                 <em>📍 500 SeaWorld Dr, San Diego, CA 92109 | 📞 (619) 222-4732</em> <a href="https://www.google.com/maps/search/?api=1&query=500+SeaWorld+Dr,+San+Diego,+CA+92109" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Parking fee is $35. Free street parking is available around Dana Landing (<a href="https://maps.app.goo.gl/Hd1JQ7PM4pro2PYm7" target="_blank" rel="noopener noreferrer">map</a>), about a 15-minute walk.<br/>
-                <img src="/images/seaworld.jpg" alt="SeaWorld San Diego" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
+                <img src={process.env.PUBLIC_URL + "/images/seaworld.jpg"} alt="SeaWorld San Diego" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
               </li>
               <li>
                 <strong>USS Midway Museum</strong> – Historic aircraft carrier museum on the waterfront.<br/>
                 <em>📍 910 N Harbor Dr, San Diego, CA 92101 | 📞 (619) 544-9600</em> <a href="https://www.google.com/maps/search/?api=1&query=910+N+Harbor+Dr,+San+Diego,+CA+92101" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Metered parking available nearby.<br/>
-                <img src="/images/uss_midway.jpg" alt="USS Midway Museum" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/uss_midway.jpg"} alt="USS Midway Museum" className="local-guide-image" />
               </li>
               <li>
                 <strong>La Jolla Cove</strong> – Scenic coastal area for swimming, snorkeling, and sea lion watching.<br/>
                 <em>📍 1100 Coast Blvd, La Jolla, CA 92037</em> <a href="https://www.google.com/maps/search/?api=1&query=1100+Coast+Blvd,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Closest free parking is at La Jolla Shores (<a href="https://maps.app.goo.gl/qu98jCZ8EgwDqJnG9" target="_blank" rel="noopener noreferrer">map</a>).<br/>
-                <img src="/images/la_jolla_cove.jpg" alt="La Jolla Cove" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/la_jolla_cove.jpg"} alt="La Jolla Cove" className="local-guide-image" />
               </li>
               <li>
                 <strong>Old Town San Diego State Historic Park</strong> – Historic area with shops, restaurants, and museums.<br/>
                 <em>📍 4002 Wallace St, San Diego, CA 92110 | 📞 (619) 220-5422</em> <a href="https://www.google.com/maps/search/?api=1&query=4002+Wallace+St,+San+Diego,+CA+92110" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Free parking available in the park.<br/>
-                <img src="/images/old_town.jpg" alt="Old Town San Diego State Historic Park" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/old_town.jpg"} alt="Old Town San Diego State Historic Park" className="local-guide-image" />
               </li>
               <li>
                 <strong>Cabrillo National Monument</strong> – Monument with panoramic views and tide pools.<br/>
                 <em>📍 1800 Cabrillo Memorial Dr, San Diego, CA 92106 | 📞 (619) 557-5450</em> <a href="https://www.google.com/maps/search/?api=1&query=1800+Cabrillo+Memorial+Dr,+San+Diego,+CA+92106" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Entrance fee required. Free with a National Park Pass.<br/>
-                <img src="/images/cabrillo.jpg" alt="Cabrillo National Monument" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/cabrillo.jpg"} alt="Cabrillo National Monument" className="local-guide-image" />
               </li>
               <li>
                 <strong>LEGOLAND California Resort</strong> – Theme park for families and LEGO fans.<br/>
                 <em>📍 1 Legoland Dr, Carlsbad, CA 92008 | 📞 (888) 690-5346</em> <a href="https://www.google.com/maps/search/?api=1&query=1+Legoland+Dr,+Carlsbad,+CA+92008" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> No free parking available.<br/>
-                <img src="/images/legoland.jpg" alt="LEGOLAND California Resort" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/legoland.jpg"} alt="LEGOLAND California Resort" className="local-guide-image" />
               </li>
               <li>
                 <strong>Belmont Park</strong> – Classic beachfront amusement park.<br/>
                 <em>📍 3146 Mission Blvd, San Diego, CA 92109 | 📞 (858) 488-1549</em> <a href="https://www.google.com/maps/search/?api=1&query=3146+Mission+Blvd,+San+Diego,+CA+92109" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Free parking available.<br/>
-                <img src="/images/belmont_park.jpg" alt="Belmont Park" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/belmont_park.jpg"} alt="Belmont Park" className="local-guide-image" />
               </li>
               <li>
                 <strong>Sesame Street in Chula Vista</strong> – Family-friendly theme park featuring Sesame Street characters, rides, and shows.<br/>
                 <em>📍 2052 Entertainment Cir, Chula Vista, CA 91911 | 📞 (619) 425-7900</em> <a href="https://www.google.com/maps/search/?api=1&query=2052+Entertainment+Cir,+Chula+Vista,+CA+91911" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 <strong>Parking:</strong> Parking fee required.<br/>
-                <img src="/images/sesame_street.jpg" alt="Sesame Street in Chula Vista" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
+                <img src={process.env.PUBLIC_URL + "/images/sesame_street.jpg"} alt="Sesame Street in Chula Vista" className="local-guide-image" style={{ width: '180px', height: 'auto' }} />
                 <a href="https://sesameplace.com/san-diego/" target="_blank" rel="noopener noreferrer">Website</a>
               </li>
             </ul>
@@ -87,49 +87,49 @@ function LocalFavorites({ activeSubTab = 'attractions' }) {
                 <strong>Torrey Pines State Natural Reserve</strong> – Scenic coastal trails with stunning ocean views, wildflowers, and unique sandstone formations.<br/>
                 <em>📍 12600 N Torrey Pines Rd, La Jolla, CA 92037</em> <a href="https://www.google.com/maps/search/?api=1&query=12600+N+Torrey+Pines+Rd,+La+Jolla,+CA+92037" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Easy to moderate trails, family-friendly. Parking: Free, but limited.<br/>
-                <img src="/images/torrey_pines.jpg" alt="Torrey Pines State Natural Reserve" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/torrey_pines.jpg"} alt="Torrey Pines State Natural Reserve" className="local-guide-image" />
               </li>
               <li>
                 <strong>Annie's Canyon Trail</strong> – Unique slot canyon hike with fun, narrow passages and beautiful views of the San Elijo Lagoon.<br/>
                 <em>📍 498-400 Solana Hills Dr, Solana Beach, CA 92075</em> <a href="https://www.google.com/maps/search/?api=1&query=498-400+Solana+Hills+Dr,+Solana+Beach,+CA+92075" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Easy to moderate, 2 miles round trip. Great for families and photos.<br/>
-                <img src="/images/annies_canyon.jpg" alt="Annie's Canyon Trail" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/annies_canyon.jpg"} alt="Annie's Canyon Trail" className="local-guide-image" />
               </li>
               <li>
                 <strong>Cowles Mountain</strong> – The highest point in San Diego, offering panoramic views of the city and beyond.<br/>
                 <em>📍 7001 Golfcrest Dr, San Diego, CA 92119</em> <a href="https://www.google.com/maps/search/?api=1&query=7001+Golfcrest+Dr,+San+Diego,+CA+92119" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Moderate, 3 miles round trip. Popular for sunrise and sunset hikes.<br/>
-                <img src="/images/cowles_mountain.jpg" alt="Cowles Mountain" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/cowles_mountain.jpg"} alt="Cowles Mountain" className="local-guide-image" />
               </li>
               <li>
                 <strong>Iron Mountain Trail</strong> – A favorite for locals, with beautiful views of the mountains and valleys.<br/>
                 <em>📍 14847-14909 CA-67, Poway, CA 92064</em> <a href="https://www.google.com/maps/search/?api=1&query=14847-14909+CA-67,+Poway,+CA+92064" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Moderate, 5.6 miles round trip. Ample parking at the trailhead.<br/>
-                <img src="/images/iron_mountain.jpg" alt="Iron Mountain Trail" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/iron_mountain.jpg"} alt="Iron Mountain Trail" className="local-guide-image" />
               </li>
               <li>
                 <strong>Los Peñasquitos Canyon Preserve</strong> – A long, mostly flat trail with a waterfall, creek crossings, and lots of wildlife.<br/>
                 <em>📍 12020 Black Mountain Rd, San Diego, CA 92129</em> <a href="https://www.google.com/maps/search/?api=1&query=12020+Black+Mountain+Rd,+San+Diego,+CA+92129" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Easy, 6.8 miles round trip. Great for families and biking.<br/>
-                <img src="/images/penasquitos_canyon.jpg" alt="Los Peñasquitos Canyon Preserve" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/penasquitos_canyon.jpg"} alt="Los Peñasquitos Canyon Preserve" className="local-guide-image" />
               </li>
               <li>
                 <strong>Mission Trails Regional Park (Fortuna Mountain Trail)</strong> – A large urban park with multiple trail options, including the challenging Fortuna Mountain.<br/>
                 <em>📍 1 Father Junipero Serra Trail, San Diego, CA 92119</em> <a href="https://www.google.com/maps/search/?api=1&query=1+Father+Junipero+Serra+Trail,+San+Diego,+CA+92119" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Moderate to challenging. Multiple trailheads and parking lots.<br/>
-                <img src="/images/mission_trails.jpg" alt="Mission Trails Regional Park" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/mission_trails.jpg"} alt="Mission Trails Regional Park" className="local-guide-image" />
               </li>
               <li>
                 <strong>Cedar Creek Falls</strong> – A dramatic waterfall hike, best in spring.<br/>
                 <em>📍 15519 Thornbush Rd, Ramona, CA 92065</em> <a href="https://www.google.com/maps/search/?api=1&query=15519+Thornbush+Rd,+Ramona,+CA+92065" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Moderate to strenuous, 6 miles round trip. Swimming allowed at the falls (seasonal).<br/>
-                <img src="/images/cedar_creek_falls.jpg" alt="Cedar Creek Falls" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/cedar_creek_falls.jpg"} alt="Cedar Creek Falls" className="local-guide-image" />
               </li>
               <li>
                 <strong>Potato Chip Rock (Mount Woodson Trail)</strong> – Famous for its unique rock formation and Instagram-worthy photos.<br/>
                 <em>📍 16310 Hwy 67, Ramona, CA 92065</em> <a href="https://www.google.com/maps/search/?api=1&query=16310+Hwy+67,+Ramona,+CA+92065" target="_blank" rel="noopener noreferrer">Google Maps</a><br/>
                 Strenuous, 7.5 miles round trip. Limited parking at the trailhead.<br/>
-                <img src="/images/potato_chip_rock.jpg" alt="Potato Chip Rock" className="local-guide-image" />
+                <img src={process.env.PUBLIC_URL + "/images/potato_chip_rock.jpg"} alt="Potato Chip Rock" className="local-guide-image" />
               </li>
             </ul>
           </div>
