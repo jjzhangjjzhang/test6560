@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function LocalFavorites() {
-  const [activeTab, setActiveTab] = useState('attractions');
-
+function LocalFavorites({ activeSubTab = 'attractions' }) {
   const tabs = [
     { id: 'attractions', label: 'Attractions', icon: '🎭' },
     { id: 'hiking', label: 'Hiking Trails', icon: '🥾' },
@@ -20,30 +18,9 @@ function LocalFavorites() {
         Discover the best of our neighborhood! These are our personal favorites - places we love and think you will too. From amazing restaurants to hidden gems, here's your local insider guide.
       </p>
       
-      {/* Tab Navigation */}
-      <div className="category-nav" style={{
-        display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem', padding: '1rem', background: '#f8f9fa', borderRadius: '12px'
-      }}>
-        {tabs.map(tab => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            style={{
-              padding: '0.75rem 1rem', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.3s ease',
-              background: activeTab === tab.id ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'white',
-              color: activeTab === tab.id ? 'white' : '#4a5568',
-              boxShadow: activeTab === tab.id ? '0 4px 12px rgba(102, 126, 234, 0.4)' : '0 2px 4px rgba(0, 0, 0, 0.1)'
-            }}
-          >
-            <span style={{ marginRight: '0.5rem' }}>{tab.icon}</span>
-            {tab.label}
-          </button>
-        ))}
-      </div>
-
       {/* Tab Content */}
       <div className="category-content">
-        {activeTab === 'attractions' && (
+        {activeSubTab === 'attractions' && (
           <div className="category">
             <h3><span className="category-icon">🎭</span> Attractions & Activities</h3>
             <ul>
@@ -111,7 +88,7 @@ function LocalFavorites() {
             </ul>
           </div>
         )}
-        {activeTab === 'hiking' && (
+        {activeSubTab === 'hiking' && (
           <div className="category">
             <h3><span className="category-icon">🥾</span> Hiking Trails</h3>
             <ul>
@@ -166,7 +143,7 @@ function LocalFavorites() {
             </ul>
           </div>
         )}
-        {activeTab === 'dining' && (
+        {activeSubTab === 'dining' && (
           <div className="category">
             <h3><span className="category-icon">🍽️</span> Restaurants & Dining</h3>
             <ul>
@@ -220,7 +197,7 @@ function LocalFavorites() {
             </ul>
           </div>
         )}
-        {activeTab === 'cafes' && (
+        {activeSubTab === 'cafes' && (
           <div className="category">
             <h3><span className="category-icon">☕</span> Cafes & Coffee Shops</h3>
             <ul>
@@ -248,7 +225,7 @@ function LocalFavorites() {
             </ul>
           </div>
         )}
-        {activeTab === 'shopping' && (
+        {activeSubTab === 'shopping' && (
           <div className="category">
             <h3><span className="category-icon">🛍️</span> Shopping & Essentials</h3>
             <ul>
@@ -276,14 +253,57 @@ function LocalFavorites() {
             </ul>
           </div>
         )}
-        {activeTab === 'transport' && (
+        {activeSubTab === 'transport' && (
           <div className="category">
             <h3><span className="category-icon">🚗</span> Transportation</h3>
             <ul>
-              <li><strong>Public Transit:</strong> Bus stop at [location] - Route [number] to downtown</li>
-              <li><strong>Ride Share:</strong> Uber and Lyft readily available in the area</li>
-              <li><strong>Bike Paths:</strong> Beautiful bike trails starting at [location]</li>
-              <li><strong>Parking:</strong> Free street parking available, garage at [location]</li>
+              <li>
+                <strong>🚌 Public Transit - MTS Bus Routes</strong><br/>
+                <em>📍 Nearest Bus Stop:</em> Governor Dr & Cascade St (0.2 miles from house)<br/>
+                <strong>Route 30:</strong> UTC Transit Center ↔ Downtown San Diego<br/>
+                <em>📍 Alternative Stop:</em> Governor Dr & Regents Rd (0.3 miles)<br/>
+                <strong>Route 41:</strong> UTC Transit Center ↔ Old Town Transit Center<br/>
+                <strong>Route 237:</strong> UTC Transit Center ↔ Fashion Valley Transit Center<br/>
+                <a href="https://www.sdmts.com/" target="_blank" rel="noopener noreferrer">MTS Website</a> | <a href="https://www.sdmts.com/schedules-and-maps" target="_blank" rel="noopener noreferrer">Schedules</a>
+              </li>
+              <li>
+                <strong>🚄 Trolley & Light Rail</strong><br/>
+                <em>📍 UTC Transit Center:</em> 4545 La Jolla Village Dr (0.8 miles)<br/>
+                <strong>Blue Line:</strong> UTC ↔ San Ysidro (via Downtown, Old Town)<br/>
+                <strong>Green Line:</strong> UTC ↔ Santee (via Mission Valley)<br/>
+                <strong>Frequency:</strong> Every 7-15 minutes during peak hours<br/>
+                <a href="https://www.sdmts.com/getting-around/trolley" target="_blank" rel="noopener noreferrer">Trolley Information</a>
+              </li>
+              <li>
+                <strong>🚕 Ride Share Services</strong><br/>
+                <strong>Uber & Lyft:</strong> Readily available in the area<br/>
+                <strong>Typical fares:</strong> $8-15 to UTC, $15-25 to downtown, $25-35 to airport<br/>
+                <strong>Wait time:</strong> Usually 3-8 minutes<br/>
+                <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer">Uber</a> | <a href="https://www.lyft.com/" target="_blank" rel="noopener noreferrer">Lyft</a>
+              </li>
+              <li>
+                <strong>🚲 Bike Paths & Trails</strong><br/>
+                <em>📍 Rose Canyon Bike Path:</em> Accessible via Governor Dr (0.5 miles)<br/>
+                <strong>Route:</strong> Connects to UCSD, La Jolla, and Mission Bay<br/>
+                <em>📍 San Diego River Trail:</em> Accessible via Regents Rd (0.8 miles)<br/>
+                <strong>Route:</strong> Connects to Mission Valley and Ocean Beach<br/>
+                <a href="https://www.sandiego.gov/park-and-recreation/parks/regional/bikeways" target="_blank" rel="noopener noreferrer">Bike Paths Map</a>
+              </li>
+              <li>
+                <strong>🅿️ Parking Information</strong><br/>
+                <strong>Street Parking:</strong> Free parking available on Cascade St and surrounding streets<br/>
+                <strong>UTC Parking:</strong> Free parking at UTC Transit Center and shopping centers<br/>
+                <strong>Airport Parking:</strong> Long-term parking available at San Diego International Airport<br/>
+                <em>Note:</em> No permit required for street parking in this area
+              </li>
+              <li>
+                <strong>✈️ Airport Transportation</strong><br/>
+                <em>📍 San Diego International Airport (SAN):</em> 12 miles away<br/>
+                <strong>By Car:</strong> 20-30 minutes (depending on traffic)<br/>
+                <strong>By Trolley:</strong> Take Blue Line from UTC to Old Town, then transfer to airport shuttle<br/>
+                <strong>By Uber/Lyft:</strong> $25-35, 20-30 minutes<br/>
+                <a href="https://www.san.org/" target="_blank" rel="noopener noreferrer">Airport Website</a>
+              </li>
             </ul>
           </div>
         )}
