@@ -142,6 +142,57 @@ body {
   font-weight: 600;
 }
 
+/* Sub Navigation */
+.sub-nav {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sub-nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-left: 1rem;
+}
+
+.sub-nav-button:hover {
+  background: #e2e8f0;
+  transform: translateX(2px);
+}
+
+.sub-nav-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.sub-nav-icon {
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+}
+
+.sub-nav-label {
+  font-weight: 500;
+}
+
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
 /* Content */
 .content {
   background: white;
