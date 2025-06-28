@@ -55,7 +55,7 @@ function App() {
           </div>
           <div className="property-image">
             <img 
-              src="/images/inside.jpg" 
+              src={process.env.PUBLIC_URL + "/images/inside.jpg"} 
               alt="6560 Cascade St, San Diego" 
               className="header-property-image"
             />

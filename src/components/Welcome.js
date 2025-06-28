@@ -4,27 +4,27 @@ import WeatherWidget from './WeatherWidget';
 function Welcome() {
   const images = [
     {
-      src: './images/page-cover_photo-16978.jpg',
+      src: process.env.PUBLIC_URL + '/images/page-cover_photo-16978.jpg',
       alt: 'Beautiful San Diego property',
       title: 'Your Home Away From Home'
     },
     {
-      src: './images/crystal pier pacific beach sunset.jpg',
+      src: process.env.PUBLIC_URL + '/images/crystal pier pacific beach sunset.jpg',
       alt: 'Crystal Pier Pacific Beach Sunset',
       title: 'Stunning Pacific Beach Views'
     },
     {
-      src: './images/blue-horizons.jpg',
+      src: process.env.PUBLIC_URL + '/images/blue-horizons.jpg',
       alt: 'Seaworld San Diego',
       title: 'Seaworld San Diego'
     },
     {
-      src: './images/San_Diego_Zoo_Entrance_.jpg',
+      src: process.env.PUBLIC_URL + '/images/San_Diego_Zoo_Entrance_.jpg',
       alt: 'San Diego Zoo Entrance',
       title: 'World-Famous San Diego Zoo'
     },
     {
-      src: './images/Legoland-California-on-a-Budget-Park-Entrance.webp',
+      src: process.env.PUBLIC_URL + '/images/Legoland-California-on-a-Budget-Park-Entrance.webp',
       alt: 'Legoland California Park Entrance',
       title: 'Legoland California'
     }
@@ -41,7 +41,7 @@ function Welcome() {
       {/* Hero Image */}
       <div className="hero-image-container">
         <img 
-          src="./images/67-print-Radiate_6560CascadeSt-67.jpg" 
+          src={process.env.PUBLIC_URL + "/images/67-print-Radiate_6560CascadeSt-67.jpg"} 
           alt="6560 Cascade St, San Diego - Your Home Away From Home" 
           className="hero-image"
         />
