@@ -20,7 +20,7 @@ function Contact() {
           <h4>🏠 Property Details</h4>
           <p><strong>Address:</strong> 6560 Cascade St, San Diego, CA 92122</p>
           <p><strong>Check-in:</strong> After 4:00 PM</p>
-          <p><strong>Check-out:</strong> By 12:00 PM</p>
+          <p><strong>Check-out:</strong> By 11:00 AM</p>
         </div>
         
         <div className="contact-card">

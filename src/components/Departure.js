@@ -17,7 +17,7 @@ function Departure() {
         margin: '2rem 0',
         textAlign: 'center'
       }}>
-        <h3 style={{ color: 'white', marginBottom: '1rem' }}>Check-out Time: 12:00 PM</h3>
+        <h3 style={{ color: 'white', marginBottom: '1rem' }}>Check-out Time: 11:00 AM</h3>
         <p style={{ margin: 0, opacity: 0.9 }}>
           There isn't too much you need to do, just a few small actions that will really help us turn the house around for the next guest.
         </p>

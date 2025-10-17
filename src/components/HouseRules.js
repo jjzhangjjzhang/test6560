@@ -13,7 +13,7 @@ function HouseRules() {
         <div className="rule-item">
           <h4>🕐 Check-in & Check-out</h4>
           <p><strong>Check-in:</strong> After 4:00 PM (We are unable to offer early check-in due to cleaning and preparation requirements.)</p>
-          <p><strong>Check-out:</strong> By 12:00 PM</p>
+          <p><strong>Check-out:</strong> By 11:00 AM</p>
           <p><strong>Early Check-in/Late Check-out:</strong> Not available due to cleaning requirements</p>
         </div>
         
@@ -89,7 +89,7 @@ function HouseRules() {
       }}>
         <h4 style={{ color: '#c05621', marginBottom: '0.5rem' }}>💡 Pro Tip</h4>
         <p style={{ margin: 0, color: '#744210' }}>
-          Plan your arrival after 4:00 PM and departure before 12:00 PM to ensure a smooth check-in and check-out process. Remember, this is a peaceful neighborhood - keeping noise levels down helps everyone enjoy their stay!
+          Plan your arrival after 4:00 PM and departure before 11:00 AM to ensure a smooth check-in and check-out process. Remember, this is a peaceful neighborhood - keeping noise levels down helps everyone enjoy their stay!
         </p>
       </div>
     </div>
